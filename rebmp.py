@@ -81,7 +81,7 @@ class KivyCamera(Image):
 
 
 
-class CamApp(App):
+class REBMP(App):
     def build(self):
         # Layout 
         floatLayout = FloatLayout()
@@ -100,4 +100,4 @@ class CamApp(App):
 
 
 if __name__ == '__main__':
-    CamApp().run()
+    REBMP().run()
