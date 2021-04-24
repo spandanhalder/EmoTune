@@ -2,7 +2,7 @@
 
 It is a music player based on facial expression which is captured in realtime through webcam.
 
-![Watch on YouTube](https://youtu.be/26RHzVvECw8)
+- [Watch on YouTube](https://youtu.be/26RHzVvECw8)
 ![Preview](SCREENSHOTS/REBMP.gif)
 
 ## Features
