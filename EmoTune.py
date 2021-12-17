@@ -8,10 +8,33 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.button import Button
 from kivy.core.audio import SoundLoader
 from deepface import DeepFace
-from border import draw_border
 import cv2
 import os
 import random
+
+def draw_face_border(img, pt1, pt2, color, thickness, r, d):
+    x1, y1 = pt1
+    x2, y2 = pt2
+
+    # Top left
+    cv2.line(img, (x1 + r, y1), (x1 + r + d, y1), color, thickness)
+    cv2.line(img, (x1, y1 + r), (x1, y1 + r + d), color, thickness)
+    cv2.ellipse(img, (x1 + r, y1 + r), (r, r), 180, 0, 90, color, thickness)
+
+    # Top right
+    cv2.line(img, (x2 - r, y1), (x2 - r - d, y1), color, thickness)
+    cv2.line(img, (x2, y1 + r), (x2, y1 + r + d), color, thickness)
+    cv2.ellipse(img, (x2 - r, y1 + r), (r, r), 270, 0, 90, color, thickness)
+
+    # Bottom left
+    cv2.line(img, (x1 + r, y2), (x1 + r + d, y2), color, thickness)
+    cv2.line(img, (x1, y2 - r), (x1, y2 - r - d), color, thickness)
+    cv2.ellipse(img, (x1 + r, y2 - r), (r, r), 90, 0, 90, color, thickness)
+
+    # Bottom right
+    cv2.line(img, (x2 - r, y2), (x2 - r - d, y2), color, thickness)
+    cv2.line(img, (x2, y2 - r), (x2, y2 - r - d), color, thickness)
+    cv2.ellipse(img, (x2 - r, y2 - r), (r, r), 0, 0, 90, color, thickness)
 
 
 class KivyCamera(Image):
@@ -41,7 +64,7 @@ class KivyCamera(Image):
             faces = face_cascade.detectMultiScale(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY), 1.3, 4)
             for (x,y,w,h) in faces:
                 # To draw a rectangle in a face
-                draw_border(frame, (x, y), (x+w, y+h), (132, 0, 255), 2,15,10)
+                draw_face_border(frame, (x, y), (x+w, y+h), (132, 0, 255), 2,15,10)
             cv2.putText(frame, self.textout.capitalize(), (0,50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,145,255), 2)
             buf1 = cv2.flip(frame, 0)
             buf = buf1.tostring()
@@ -78,10 +101,7 @@ class KivyCamera(Image):
         return exit
         
 
-
-
-
-class REBMP(App):
+class EmoTune(App):
     def build(self):
         # Layout 
         floatLayout = FloatLayout()
@@ -100,4 +120,4 @@ class REBMP(App):
 
 
 if __name__ == '__main__':
-    REBMP().run()
+    EmoTune().run()
