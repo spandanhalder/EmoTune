@@ -63,7 +63,7 @@ class KivyCamera(Image):
             self.textout = emotion
             if self.isPlaying:
                 self.sound.stop() 
-            path = 'assets' + '//' + emotion + '//'
+            path = 'assets' + '/' + emotion + '/'
             self.sound = SoundLoader.load(path + str(random.randint(1, len(os.listdir(path)))) + '.mp3')
             if self.sound:
                 self.sound.play()
