@@ -1,4 +1,4 @@
-from cv2 import *
+import cv2
 def draw_border(img, pt1, pt2, color, thickness, r, d):
     x1, y1 = pt1
     x2, y2 = pt2
