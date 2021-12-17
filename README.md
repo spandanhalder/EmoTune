@@ -1,5 +1,5 @@
 <center>
-<img align='left' height='32px' width='32px' src = 'assets/logo/logo.png'>
+<img align='left' height='50px' width='50px' src = 'assets/logo/logo.png'>
 
 # EmoTune
 </center>
