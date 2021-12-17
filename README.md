@@ -10,10 +10,7 @@ Realtime Facial Expression Based Music Player which captures the facial expressi
 <img height='250px' width='250px' src = 'assets/logo/banner.gif'>
 </p>
 
-Created with Python.
-
-![Preview](SCREENSHOTS/REBMP.gif)
-- [Watch on YouTube](https://youtu.be/26RHzVvECw8)
+Created with Python. To watch the live demo click [here](https://youtu.be/26RHzVvECw8).
 
 ## Features
 -	This is complete GUI based application.
