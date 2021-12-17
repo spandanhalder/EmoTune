@@ -1,7 +1,8 @@
-
+<center>
 <img align='left' width="32px" src = 'assets/logo/logo.png'>
 
 # EmoTune
+</center>
 
 ## Realtime Facial Expression Based Music Player
 
