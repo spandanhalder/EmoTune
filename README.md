@@ -2,14 +2,15 @@
 <img align='left' height='75px' width='65px' src = 'assets/logo/logo.png'/>
 
 # EmoTune
+
+Emotune is a 
+Realtime Facial Expression Based Music Player which captures the facial expression in real-time and plays music accordingly.
 </p>
 <p align="center">
 <img height='250px' width='250px' src = 'assets/logo/banner.gif'>
 </p>
 
-Realtime Facial Expression Based Music Player
-
-It is a music player based on facial expression which is captured in realtime through webcam.
+Created with Python.
 
 ![Preview](SCREENSHOTS/REBMP.gif)
 - [Watch on YouTube](https://youtu.be/26RHzVvECw8)
