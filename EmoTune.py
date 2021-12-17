@@ -103,6 +103,8 @@ class KivyCamera(Image):
 
 class EmoTune(App):
     def build(self):
+        # Icon
+        self.icon = 'assets/logo/logo.png'
         # Layout 
         floatLayout = FloatLayout()
         horizontalLayout = BoxLayout(orientation='horizontal')
