@@ -1,4 +1,4 @@
-<img height='25px' width='25px' src = 'assets/logo/logo.png'>
+<img height='50px' width='50px' src = 'assets/logo/logo.png'>
 
 # EmoTune
 <p align="center">
