@@ -1,6 +1,8 @@
+<p>
 <img align='left' height='55px' width='55px' src = 'assets/logo/logo.png'/>
 
 # EmoTune
+</p>
 <p align="center">
 <img height='250px' width='250px' src = 'assets/logo/banner.gif'>
 </p>
