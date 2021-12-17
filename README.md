@@ -1,10 +1,10 @@
 <center>
-<img align='left' width="32px" src = 'assets/logo/logo.png'>
+<img align='left' height='32px' width='32px' src = 'assets/logo/logo.png'>
 
 # EmoTune
 </center>
 
-## Realtime Facial Expression Based Music Player
+Realtime Facial Expression Based Music Player
 
 It is a music player based on facial expression which is captured in realtime through webcam.
 
