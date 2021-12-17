@@ -1,4 +1,9 @@
-# Realtime Facial Expression Based Music Player
+
+<img align='left' width="32px" src = 'assets/logo/logo.png'>
+
+# EmoTune
+
+## Realtime Facial Expression Based Music Player
 
 It is a music player based on facial expression which is captured in realtime through webcam.
 
